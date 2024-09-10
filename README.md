@@ -19,7 +19,7 @@ git status
 
 ```
 git add 'filename' or git add .
-
+```
 - Unstage a file
 
 ```
@@ -76,4 +76,9 @@ git remote -v
 
 ```
 git push origin master
+```
+- fatal: The current branch master has no upstream branch. To push the current branch and set the remote as upstream, use
+
+```
+git push --set-upstream origin master
 ```
