@@ -1,11 +1,11 @@
 ## Git Workshop - Git is a version control system 
 
-- create folder and initialize git using 
+- Create folder and initialize git to track files for version control using 
 
 ```
 git init
 ```
-- check status of vcs using
+- Check status of files using
 
 ```
 git status
@@ -13,33 +13,67 @@ git status
 
 - Files in Git contains three stages : Untracked, Staged and Tracked
 
-- create a new file - untracked 
+- Create a new file - untracked 
 
-- add files to be staged using
+- Add files to be staged using
 
 ```
-git add 'filename'
+git add 'filename' or git add .
+
+- Unstage a file
+
 ```
-- commit files to be tracked using
+git rm --cached 'filename'
+```
+
+- Commit files to be tracked using
 
 ```
 git commit -m "add message"
 ```
 
-- to delete a file 
+- Delete a file 
 
 ```
 rm 'filename'
 ```
 
-- to restore deleted file, if already commited(tracked) using
+- Restore deleted file, if already commited(tracked) using
 
 ```
 git restore 'filename'
 ```
 
-- to check history of commands utilized
+- Check history of commands used
 
 ```
 history
+```
+
+- Push changes onto the GitHub Repository, first create a new repository with the same name as the folder in git
+
+```
+git remote add origin 'http gitHub repo link'
+git push -u origin main
+```
+above 2 commands will give an error probably -- "error: failed to push some refs to 'http gitHub repo link' "
+
+- Eliminate this error by creating a Personal access token from developer settings, give Note, Expiration  and  Select scopes(as per choice, ex. 7 days)and then copy access token to use in next command
+
+- Change the remote URL to your new repository, if the current remote is still pointing to the old repository, update it to the new one. :
+
+```
+remote set-url origin http://accesstoken@github.com/ritikasharma1505/GitHub-For-DevOps-Workshop.git
+```
+
+- Check your current remote
+
+```
+git remote -v
+```
+
+- Push the code to the new repository: Now that your remote is updated, you can push your code to the new repository:
+
+```
+git push origin master
 ```
