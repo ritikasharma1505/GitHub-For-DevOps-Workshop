@@ -20,6 +20,7 @@ git status
 ```
 git add 'filename' or git add .
 ```
+
 - Unstage a file
 
 ```
@@ -81,4 +82,42 @@ git push origin master
 
 ```
 git push --set-upstream origin master
+```
+
+- Clone or make a copy of a remote repository(GitHub) to your local repository(Git)
+
+```
+git clone 'http repo link'
+```
+
+- Bring the code from remote(GitHub) to local machine(Git)
+
+```
+git pull origin master  or git pull
+```
+
+- Branches in Git and GitHub, Every branch maintain its own copy, Create a new branch and switches you to that branch
+
+```
+git checkout -B 'branchname'  
+```
+- Create a new branch without switching to that branch (only creates)
+
+```
+git branch 'branchname'
+```
+- Check branches created or available
+
+```
+git branch
+```
+- Switch to other branch
+
+```
+git switch 'branchname' or git checkout 'branchname'
+```
+- Check one line logs, HEAD represents the latest commit
+
+```
+git log --oneline
 ```
