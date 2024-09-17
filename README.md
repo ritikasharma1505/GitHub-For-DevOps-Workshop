@@ -64,7 +64,7 @@ above 2 commands will give an error probably -- "error: failed to push some refs
 - Change the remote URL to your new repository, if the current remote is still pointing to the old repository, update it to the new one. :
 
 ```
-remote set-url origin http://accesstoken@github.com/ritikasharma1505/GitHub-For-DevOps-Workshop.git
+git remote set-url origin http://accesstoken@github.com/ritikasharma1505/GitHub-For-DevOps-Workshop.git
 ```
 
 - Check your current remote
